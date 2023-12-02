@@ -1,1 +1,268 @@
 
+body{
+  width:100vw;
+  height:100vh;
+  background-color: hsla(35, 77%, 62%, 0.2);
+  font-family:Iner;
+  margin: 0;
+  padding: 0;
+}
+.container{
+   width:85%;
+   margin:0 auto;
+   margin-top:60px;
+   background-color:hsl(36, 100%, 99%);
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.news-container{
+  width:80%;
+  height:auto;
+  padding:40px;
+  margin:0 auto;
+  margin-top:60px;
+  background-color:hsl(36, 100%, 99%);
+}
+nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 0;
+       margin-top:-40px;
+    }
+nav a {
+  color:hsl(236, 13%, 42%);
+  text-decoration: none;
+  margin: 0 15px;
+}
+nav a:hover {
+  color:hsl(5, 85%, 63%);
+}
+ .right-menu {
+    display: none;
+   
+  }
+
+
+
+
+.header-section{
+  width:65%;
+  height:auto;
+  margin-top:20px;
+}
+.header-section img{
+  width:100%;
+  height:auto;
+}
+main{
+  display:flex;
+}
+.right-section{
+  width:35%;
+  height:auto;
+  margin-left:20px;
+  margin-top:20px;
+  background-color:hsl(240, 100%, 5%);
+  color:hsl(36, 100%, 99%);
+}
+.right{
+  width:80%;
+  text-align:left;
+  margin:0 auto;
+  border-bottom:1px solid hsl(236, 13%, 42%) ;
+}
+.last{
+  border-bottom:none;
+}
+.right h1{
+  color:hsl(35, 77%, 62%);
+}
+.right h2{
+  font-size:18px;
+  color:hsl(36, 100%, 99%);
+  cursor:pointer;
+}
+.right h2:hover{
+  color:hsl(35, 77%, 62%);
+}
+.right p{
+  color:hsl(233, 8%, 79%) ;
+}
+.future{
+  display:flex;
+}
+.future h1{
+  color:hsl(240, 100%, 5%);
+  font-size:38px;
+  font-weight:800;
+}
+.future p{
+  margin-top:30px;
+  margin-left:90px;
+  width:50%;
+}
+button {
+      background-color: hsl(5, 85%, 63%); 
+      color: #fff;
+      padding: 10px 20px;
+      margin-left:17%;
+      margin-top:-5%;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+       position:absolute;
+    }
+
+    button:hover {
+      background-color: hsl(240, 100%, 5%); 
+    }
+.bottom-section {
+  width: 100%;
+  height:auto;
+  display: flex;
+  margin-top: 30px; 
+}
+.retro,
+.laptops,
+.gaming {
+  display: flex;
+  width: 100%;
+  border-radius: none;
+  overflow: hidden;
+  
+}
+
+.retro img,
+.laptops img,
+.gaming img {
+  width: 50%;
+  height: auto;
+}
+
+.retro-info,
+.laptops-info,
+.gaming-info {
+  margin: 20px;
+  width: 50%;
+  margin-top:-20px;
+}
+
+.bottom-section h1 {
+  color: hsl(233, 8%, 79%);
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.bottom-section h2 {
+  color: hsl(240, 100%, 5%);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.bottom-section p {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+}
+.sidepanel {
+  height: 250px;
+  height:230vh;
+  width: 0; 
+  position:absolute;
+  z-index: 1; 
+  top: 60px;
+  right: 60px;
+  background-color: white; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+ 
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 767px) {
+  .logo{
+    margin-top:-10px;
+  }
+  nav {
+    display: none;
+  }
+  .right-menu {
+    display: block;
+  }
+  .right-menu {
+      padding: 10px 0;
+       margin-top:-50px;
+    margin-left:87%;
+}
+ 
+  .header-section{
+    display: flex;
+   flex-direction: column;
+    width:70vw;
+    height:550px;
+    text-align:center;
+  }
+  .header-section img{
+    width:70vw;
+    height:auto;
+  }
+  .future{
+     display: flex;
+  flex-direction: column;
+    text-align:center;
+  }
+  
+  .future p{
+     width:50vw;
+    margin-top:-10px;
+    margin:0 auto;
+  }
+  button{
+    margin-top:500px;
+  }
+  .right-section{
+    margin-top:590px;
+    width:70vw;
+    height:auto;
+    margin-left:-70vw;
+  }
+  .right{
+     width:70vw;
+    margin-left:5px;
+  }
+  .bottom-section{
+   display: flex;
+  flex-direction: column;
+  }
+  .retro img,
+.laptops img,
+.gaming img {
+  width: 50%;
+  height: 30vh;
+  margin-bottom:10px;
+}
+}
