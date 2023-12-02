@@ -2,59 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+  <div class="news-container">
+<header>
+    <img class="logo" src="https://raw.githubusercontent.com/zaklinaradivojevic/News-homepage/c63080cd3be1350b097e244ebbd3fb1725d74657/news-homepage-main/assets/images/logo.svg" alt="Company Logo">
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">New</a>
+    <a href="#">Popular</a>
+    <a href="#">Trending</a>
+     <a href="#">Categories</a>
+  </nav>
+  <div class="right-menu">
+ <a href="javascript:void(0);" class="icon" onclick="openNav()">
+  <img src="https://raw.githubusercontent.com/zaklinaradivojevic/News-homepage/c63080cd3be1350b097e244ebbd3fb1725d74657/news-homepage-main/assets/images/icon-menu.svg" alt="mobile-menu">
+</a>
+    <!-- Navigation links (hidden by default) -->
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+    <img src="https://raw.githubusercontent.com/zaklinaradivojevic/News-homepage/c63080cd3be1350b097e244ebbd3fb1725d74657/news-homepage-main/assets/images/icon-menu-close.svg">
+  </a>
+  <a href="#">Home</a>
+  <a href="#">New</a>
+  <a href="#">Popular</a>
+  <a href="#">Trending</a>
+  <a href="#">Categories</a>
+</div>
+</div>
+    <main>
+    <section class="header-section">
+   <img src="https://github.com/zaklinaradivojevic/News-homepage/blob/main/news-homepage-main/assets/images/image-web-3-desktop.jpg?raw=true" alt="header-img">
+      <div class="future">
+        <h1>The Bright<br> Future of<br> Web 3.0?</h1>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?</p>
+      </div>
+      <button>Read more</button>
+ </section>
+     <section class="right-section">
+       <div class="right">
+         <h1>New</h1> 
 
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
+         <h2>Hydrogen VS Electric Cars</h2>
+         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+       </div>
+       <div class="right">
+         <h2>The Downsides of AI Artistry</h2>
+         <p>What are the possible adverse effects of on-demand AI image generation?</p>
+       </div>
+       <div class="right last">
+         <h2>Is VC Funding Drying Up?</h2>
+         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+       </div>
+    </section>
+    </main>
+    <section class="bottom-section">
+      <div class="retro">
+        <img src="https://github.com/zaklinaradivojevic/News-homepage/blob/main/news-homepage-main/assets/images/image-retro-pcs.jpg?raw=true" alt="retro">
+        <div class="retro-info">
+          <h1>01</h1>
+          <h2>Reviving Retro PCs</h2>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="laptops">
+         <img src="https://github.com/zaklinaradivojevic/News-homepage/blob/main/news-homepage-main/assets/images/image-top-laptops.jpg?raw=true" alt="laptops">
+        <div class="laptops-info">
+        <h1>02</h1>
+        <h2>Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="gaming">
+         <img src="https://github.com/zaklinaradivojevic/News-homepage/blob/main/news-homepage-main/assets/images/image-gaming-growth.jpg?raw=true" alt="gaming">
+        <div class="gaming-info">
+        <h1>03</h1>
+        <h2>The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  </div>
+   <script src="script.js"></script>
 </body>
 </html>
